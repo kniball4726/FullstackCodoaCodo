@@ -55,7 +55,7 @@ function mostrarAlumnos() {
 
     alumnos.forEach(function(alumno) {
         var nuevoAlumno = document.createElement("div");
-        nuevoAlumno.innerHTML = "<p>" + alumno.nombre + " " + alumno.apellido + "<br>" + alumno.email + "</p>";
+        nuevoAlumno.innerHTML = "<p>" + alumno.nombre + " " + alumno.apellido + "<br>" + alumno.email + "</p>" + "<br>";
         nombreM.appendChild(nuevoAlumno);
     });
 }
@@ -82,7 +82,7 @@ function grupoVisualizacion() {
 
         grupo.forEach(function(alumno) {
             var alumnoDiv = document.createElement("div");
-            alumnoDiv.innerHTML = "<p>" + alumno.nombre + " " + alumno.apellido + "<br>" + alumno.email + "</p>";
+            alumnoDiv.innerHTML = "<p>" + alumno.nombre + " " + alumno.apellido + "<br>" + alumno.email + "</p>" + "<br>";
             grupoDiv.appendChild(alumnoDiv);
         });
 
